@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS0110</title>
+<script>
+window.onload=function(){
+	var oTxt=document.getElementById('text1');
+	var oSelect=document.getElementById('select1');
+	var oBtn=document.getElementById('btn1');
+	var oImg=document.getElementById('img1');
+	var oP=document.getElementById('p1');
+	oBtn.onclick=function(){
+		//alert(oTxt.type);
+		//alert(oTxt.value+' located in '+oSelect.value);
+		//oTxt.value=oSelect.value;
+		//oImg.src=oTxt.value;
+		oP.innerHTML=oTxt.value;
+		oTxt.value="";
+		};
+	};
+</script>
+</head>
+
+<body>
+<input id="text1" type="text" value="">
+<select id="select1">
+	<option value="Beijing">Beijing</option>
+   	<option value="Shanghai">Shanghai</option>
+   	<option value="Tianjin">Tianjin</option>
+</select>
+<input id="btn1" type="button" value="Press">
+<br/>
+<img id="img1" src="img/2.jpg" />
+<p id="p1">dfajkl;sfjs;ldfja;</p>
+</body>
+</html>
